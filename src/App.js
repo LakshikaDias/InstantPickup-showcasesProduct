@@ -31,7 +31,7 @@ function App() {
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand m-4" href="/">
               Product Showcase
             </a>
           </div>
@@ -41,7 +41,7 @@ function App() {
         <main>
           <section className="py-5">
             <div className="container">
-              <div className="row">
+              <div className="row mb-5">
                 <div className="col-lg-6">
                   {/**
                    * Used LazyLoad component
@@ -55,7 +55,7 @@ function App() {
                   </LazyLoad>
                 </div>
                 <div className="col-lg-6">
-                  <h2>Product Title</h2>
+                  <h2>Product Title 1</h2>
                   <p className="lead">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -68,6 +68,35 @@ function App() {
                   </p>
                   <button className="btn btn-success m-2">Buy Now</button>
                   <button className="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+              <div className="row mb-5">
+                <div className="col-lg-6">
+                  <h2>Product Title 2</h2>
+                  <p className="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <button className="btn btn-success m-2">Buy Now</button>
+                  <button className="btn btn-primary">Add To Cart</button>
+                </div>
+                <div className="col-lg-6">
+                  {/**
+                   * Used LazyLoad component
+                   */}
+                  <LazyLoad height={200} once>
+                    <img
+                      src="product-image.jpg"
+                      alt="Product-image"
+                      className="img-fluid"
+                    />
+                  </LazyLoad>
                 </div>
               </div>
             </div>
